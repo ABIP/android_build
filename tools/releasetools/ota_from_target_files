@@ -518,6 +518,15 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
 
   script.ShowProgress(0.5, 0)
 
+  script.Print("   _____ __________._____________  ")
+  script.Print("  /  _  \\______   \   \______   \ ")
+  script.Print(" /  /_\  \|    |  _/   ||     ___/ ")
+  script.Print("/    |    \    |   \   ||    |     ")
+  script.Print("\____|__  /______  /___||____|     ")
+  script.Print("        \/       \/                ")
+  script.Print("  Android Batik Indonesia Project  ")
+  script.Print(" ")
+
   if OPTIONS.wipe_user_data:
     script.FormatPartition("/data")
 
