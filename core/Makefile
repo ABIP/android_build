@@ -1513,24 +1513,24 @@ ifneq ($(TARGET_CUSTOM_RELEASETOOL),)
 endif
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(ABIP_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(ABIP_TARGET_PACKAGE) > $(ABIP_TARGET_PACKAGE).md5sum
-        @echo -e ""
-        @echo -e ${CL_RED}"               AAA                    BBBBBBBBBBBBBBBBB        IIIIIIIIII     PPPPPPPPPPPPPPPPP    "${CL_RST}
-        @echo -e ${CL_RED}"              A:::A                   B::::::::::::::::B       I::::::::I     P::::::::::::::::P   "${CL_RST}
-        @echo -e ${CL_RED}"             A:::::A                  B::::::BBBBBB:::::B      I::::::::I     P::::::PPPPPP:::::P  "${CL_RST}
-        @echo -e ${CL_RED}"            A:::::::A                 BB:::::B     B:::::B     II::::::II     PP:::::P     P:::::P "${CL_RST}
-        @echo -e ${CL_RED}"           A:::::::::A                  B::::B     B:::::B       I::::I         P::::P     P:::::P "${CL_RST}
-        @echo -e ${CL_RED}"          A:::::A:::::A                 B::::B     B:::::B       I::::I         P::::P     P:::::P "${CL_RST}
-        @echo -e ${CL_RED}"         A:::::A A:::::A                B::::BBBBBB:::::B        I::::I         P::::PPPPPP:::::P  "${CL_RST}
-        @echo -e ${CL_RED}"        A:::::A   A:::::A               B:::::::::::::BB         I::::I         P:::::::::::::PP   "${CL_RST}
-        @echo -e ${CL_WHT}"       A:::::A     A:::::A              B::::BBBBBB:::::B        I::::I         P::::PPPPPPPPP     "${CL_RST}
-        @echo -e ${CL_WHT}"      A:::::AAAAAAAAA:::::A             B::::B     B:::::B       I::::I         P::::P             "${CL_RST}
-        @echo -e ${CL_WHT}"     A:::::::::::::::::::::A            B::::B     B:::::B       I::::I         P::::P             "${CL_RST}
-        @echo -e ${CL_WHT}"    A:::::AAAAAAAAAAAAA:::::A           B::::B     B:::::B       I::::I         P::::P             "${CL_RST}
-        @echo -e ${CL_WHT}"   A:::::A             A:::::A        BB:::::BBBBBB::::::B     II::::::II     PP::::::PP           "${CL_RST}
-        @echo -e ${CL_WHT}"  A:::::A               A:::::A       B:::::::::::::::::B      I::::::::I     P::::::::P           "${CL_RST}
-        @echo -e ${CL_WHT}" A:::::A                 A:::::A      B::::::::::::::::B       I::::::::I     P::::::::P           "${CL_RST}
-        @echo -e ${CL_WHT}"AAAAAAA                   AAAAAAA     BBBBBBBBBBBBBBBBB        IIIIIIIIII     PPPPPPPPPP           "${CL_RST}
-        @echo -e ""
+	@echo -e ""
+	@echo -e ${CL_RED}"                AAA                    BBBBBBBBBBBBBBBBB        IIIIIIIIII     PPPPPPPPPPPPPPPPP    "${CL_RST}
+	@echo -e ${CL_RED}"               A:::A                   B::::::::::::::::B       I::::::::I     P::::::::::::::::P   "${CL_RST}
+	@echo -e ${CL_RED}"              A:::::A                  B::::::BBBBBB:::::B      I::::::::I     P::::::PPPPPP:::::P  "${CL_RST}
+	@echo -e ${CL_RED}"             A:::::::A                 BB:::::B     B:::::B     II::::::II     PP:::::P     P:::::P "${CL_RST}
+	@echo -e ${CL_RED}"            A:::::::::A                  B::::B     B:::::B       I::::I         P::::P     P:::::P "${CL_RST}
+	@echo -e ${CL_RED}"           A:::::A:::::A                 B::::B     B:::::B       I::::I         P::::P     P:::::P "${CL_RST}
+	@echo -e ${CL_RED}"          A:::::A A:::::A                B::::BBBBBB:::::B        I::::I         P::::PPPPPP:::::P  "${CL_RST}
+	@echo -e ${CL_RED}"         A:::::A   A:::::A               B:::::::::::::BB         I::::I         P:::::::::::::PP   "${CL_RST}
+	@echo -e ${CL_WHT}"        A:::::A     A:::::A              B::::BBBBBB:::::B        I::::I         P::::PPPPPPPPP     "${CL_RST}
+	@echo -e ${CL_WHT}"       A:::::AAAAAAAAA:::::A             B::::B     B:::::B       I::::I         P::::P             "${CL_RST}
+	@echo -e ${CL_WHT}"      A:::::::::::::::::::::A            B::::B     B:::::B       I::::I         P::::P             "${CL_RST}
+	@echo -e ${CL_WHT}"     A:::::AAAAAAAAAAAAA:::::A           B::::B     B:::::B       I::::I         P::::P             "${CL_RST}
+	@echo -e ${CL_WHT}"    A:::::A             A:::::A        BB:::::BBBBBB::::::B     II::::::II     PP::::::PP           "${CL_RST}
+	@echo -e ${CL_WHT}"   A:::::A               A:::::A       B:::::::::::::::::B      I::::::::I     P::::::::P           "${CL_RST}
+	@echo -e ${CL_WHT}"  A:::::A                 A:::::A      B::::::::::::::::B       I::::::::I     P::::::::P           "${CL_RST}
+	@echo -e ${CL_WHT}" AAAAAAA                   AAAAAAA     BBBBBBBBBBBBBBBBB        IIIIIIIIII     PPPPPPPPPP           "${CL_RST}
+	@echo -e ""
 	@echo -e ${CL_GRN}"===============================-Package complete-==============================="${CL_RST}
 	@echo -e ${CL_RED}"===========================-To ALL THE XDA NOOBS!-=============================="${CL_RST}
 	@echo -e ${CL_RED}"=============================-PLEASE READ THIS!-================================"${CL_RST}
