@@ -1532,6 +1532,17 @@ endif
         @echo -e ${CL_WHT}"AAAAAAA                   AAAAAAA     BBBBBBBBBBBBBBBBB        IIIIIIIIII     PPPPPPPPPP           "${CL_RST}
         @echo -e ""
 	@echo -e ${CL_GRN}"===============================-Package complete-==============================="${CL_RST}
+	@echo -e ${CL_RED}"===========================-To ALL THE XDA NOOBS!-=============================="${CL_RST}
+	@echo -e ${CL_RED}"=============================-PLEASE READ THIS!-================================"${CL_RST}
+	@echo -e ""
+	@echo -e ${CL_GRN}"     Please remember that this source is currently for private builds ONLY!"${CL_RST}
+	@echo -e ""
+	@echo -e ${CL_GRN}"       Public builds are NOT ALLOWED, all public builds will be removed!"${CL_RST}
+	@echo -e ""
+	@echo -e ${CL_GRN}"   It will be welcomed after beta release begin. Thank you, the Developers."${CL_RST}
+	@echo -e ""
+	@echo -e ${CL_RED}"=============================-PLEASE READ THIS!-================================"${CL_RST}
+	@echo -e ${CL_RED}"===========================-To ALL THE XDA NOOBS!-=============================="${CL_RST}
 
 # -----------------------------------------------------------------
 # The update package
