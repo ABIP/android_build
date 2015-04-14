@@ -9,6 +9,7 @@ ifneq ($(BUILD_WITH_COLORS),0)
   CL_BLU="\033[34m"
   CL_MAG="\033[35m"
   CL_CYN="\033[36m"
+  CL_WHT="\033[37m"
   CL_RST="\033[0m"
 endif
 
@@ -1512,7 +1513,25 @@ ifneq ($(TARGET_CUSTOM_RELEASETOOL),)
 endif
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(ABIP_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(ABIP_TARGET_PACKAGE) > $(ABIP_TARGET_PACKAGE).md5sum
-	@echo -e ${CL_CYN}"Package Complete: $(ABIP_TARGET_PACKAGE)"${CL_RST}
+        @echo -e ""
+        @echo -e ${CL_RED}"               AAA                    BBBBBBBBBBBBBBBBB        IIIIIIIIII     PPPPPPPPPPPPPPPPP    "${CL_RST}
+        @echo -e ${CL_RED}"              A:::A                   B::::::::::::::::B       I::::::::I     P::::::::::::::::P   "${CL_RST}
+        @echo -e ${CL_RED}"             A:::::A                  B::::::BBBBBB:::::B      I::::::::I     P::::::PPPPPP:::::P  "${CL_RST}
+        @echo -e ${CL_RED}"            A:::::::A                 BB:::::B     B:::::B     II::::::II     PP:::::P     P:::::P "${CL_RST}
+        @echo -e ${CL_RED}"           A:::::::::A                  B::::B     B:::::B       I::::I         P::::P     P:::::P "${CL_RST}
+        @echo -e ${CL_RED}"          A:::::A:::::A                 B::::B     B:::::B       I::::I         P::::P     P:::::P "${CL_RST}
+        @echo -e ${CL_RED}"         A:::::A A:::::A                B::::BBBBBB:::::B        I::::I         P::::PPPPPP:::::P  "${CL_RST}
+        @echo -e ${CL_RED}"        A:::::A   A:::::A               B:::::::::::::BB         I::::I         P:::::::::::::PP   "${CL_RST}
+        @echo -e ${CL_WHT}"       A:::::A     A:::::A              B::::BBBBBB:::::B        I::::I         P::::PPPPPPPPP     "${CL_RST}
+        @echo -e ${CL_WHT}"      A:::::AAAAAAAAA:::::A             B::::B     B:::::B       I::::I         P::::P             "${CL_RST}
+        @echo -e ${CL_WHT}"     A:::::::::::::::::::::A            B::::B     B:::::B       I::::I         P::::P             "${CL_RST}
+        @echo -e ${CL_WHT}"    A:::::AAAAAAAAAAAAA:::::A           B::::B     B:::::B       I::::I         P::::P             "${CL_RST}
+        @echo -e ${CL_WHT}"   A:::::A             A:::::A        BB:::::BBBBBB::::::B     II::::::II     PP::::::PP           "${CL_RST}
+        @echo -e ${CL_WHT}"  A:::::A               A:::::A       B:::::::::::::::::B      I::::::::I     P::::::::P           "${CL_RST}
+        @echo -e ${CL_WHT}" A:::::A                 A:::::A      B::::::::::::::::B       I::::::::I     P::::::::P           "${CL_RST}
+        @echo -e ${CL_WHT}"AAAAAAA                   AAAAAAA     BBBBBBBBBBBBBBBBB        IIIIIIIIII     PPPPPPPPPP           "${CL_RST}
+        @echo -e ""
+	@echo -e ${CL_GRN}"===============================-Package complete-==============================="${CL_RST}
 
 # -----------------------------------------------------------------
 # The update package
