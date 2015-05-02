@@ -518,14 +518,28 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
 
   script.ShowProgress(0.5, 0)
 
-  script.Print("   _____ __________._____________  ")
-  script.Print("  /  _  \\______   \   \______   \ ")
-  script.Print(" /  /_\  \|    |  _/   ||     ___/ ")
-  script.Print("/    |    \    |   \   ||    |     ")
-  script.Print("\____|__  /______  /___||____|     ")
-  script.Print("        \/       \/                ")
-  script.Print("  Android Batik Indonesia Project  ")
-  script.Print(" ")
+  script.Print("*********************************************");
+  script.Print("*    ________  ________  ___  ________      *")
+  script.Print("*   |\   __  \|\   __  \|\  \|\   __  \     *")
+  script.Print("*   \ \  \|\  \ \  \|\ /\ \  \ \  \|\  \    *")
+  script.Print("*    \ \   __  \ \   __  \ \  \ \   ____\   *")
+  script.Print("*     \ \  \ \  \ \  \|\  \ \  \ \  \___|   *")
+  script.Print("*      \ \__\ \__\ \_______\ \__\ \__\      *")
+  script.Print("*       \|__|\|__|\|_______|\|__|\|__|      *")
+  script.Print("*                                           *");
+  script.Print("*********************************************");
+  script.Print("****   Android Batik Indonesia Project   ****");
+  script.Print("*********************************************"); 
+  abipv = GetBuildProp("ro.abip.version", OPTIONS.info_dict)
+  build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
+  device = GetBuildProp("ro.product.device", OPTIONS.info_dict)
+  model = GetBuildProp("ro.product.model", OPTIONS.info_dict)
+  dev = GetBuildProp("ro.build.user", OPTIONS.info_dict)
+  script.Print("* Version : %s"%(abipv));
+  script.Print("* Compiled: %s"%(build));
+  script.Print("* Device  : %s (%s)"%(model, device));
+  script.Print("* By      : %s"%(dev));
+  script.Print("*********************************************");
 
   if OPTIONS.wipe_user_data:
     script.FormatPartition("/data")

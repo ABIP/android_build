@@ -1532,6 +1532,9 @@ endif
 	@echo -e ${CL_WHT}" AAAAAAA                   AAAAAAA     BBBBBBBBBBBBBBBBB        IIIIIIIIII     PPPPPPPPPP           "${CL_RST}
 	@echo -e ""
 	@echo -e ${CL_GRN}"===============================-Package complete-==============================="${CL_RST}
+	@echo -e ${CL_CYN}"zip: "${CL_MAG} $(ABIP_TARGET_PACKAGE)${CL_RST}
+	@echo -e ${CL_CYN}"md5: "${CL_MAG}" `cat $(ABIP_TARGET_PACKAGE).md5sum | cut -d ' ' -f 1`"${CL_RST}
+	@echo -e ${CL_CYN}"size:"${CL_MAG}" `ls -lah $(ABIP_TARGET_PACKAGE) | cut -d ' ' -f 5`"${CL_RST}
 	@echo -e ${CL_RED}"===========================-To ALL THE XDA NOOBS!-=============================="${CL_RST}
 	@echo -e ${CL_RED}"=============================-PLEASE READ THIS!-================================"${CL_RST}
 	@echo -e ""
